@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-## Getting Started
+## User interface
 
 ![sign_up](https://user-images.githubusercontent.com/21257332/165013201-15353004-3c98-4e87-8845-3392051ba071.png)
 
