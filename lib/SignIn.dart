@@ -38,12 +38,12 @@ class SignInState extends State<SignIn> {
 
     AssetImage assetsImage =  AssetImage(
         'assets/images/logo.png'); //<- Creates an object that fetches an image.
+
     var image = new Image(
         image: assetsImage,
         fit: BoxFit.fill,
         width: 122,
         height: 122); //<- Creates a widget that displays an image.
-
 
     return Scaffold(
         backgroundColor: Colors.white,
@@ -289,5 +289,6 @@ class SignInState extends State<SignIn> {
               )),
         ) //<- place where the image appears
     );
+
   }
 }

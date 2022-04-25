@@ -1,11 +1,10 @@
-// @dart=2.9
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class TextFieldCus extends StatelessWidget {
-  final String hintText,text;
-  final TextEditingController editingController;
-  final String typee;
+  final String? hintText,text;
+  final TextEditingController? editingController;
+  final String? typee;
 
   static const Color textFieldbgColor = const Color(0xFFF9F9F9);
   static const Color textFieldhintColor = const Color(0xFF6A6A6A);
@@ -14,7 +13,7 @@ class TextFieldCus extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController _controller;
+    TextEditingController? _controller;
     var  keyType;
     var  length;
 
@@ -30,9 +29,9 @@ class TextFieldCus extends StatelessWidget {
     }
 
     if (editingController!=null) {
-      _controller = editingController;
+      _controller = editingController!;
     } else {
-      _controller = null;
+      // _controller = null;
     }
 
     OutlineInputBorder outlineInputBorder =  const OutlineInputBorder(
